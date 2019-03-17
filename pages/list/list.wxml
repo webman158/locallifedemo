@@ -1,0 +1,14 @@
+<navigator url='/pages/detail/detail?id={{item.id}}&title={{item.name}}' class='shop' wx:for="{{shopList}}" wx:key="id">
+  <view class='left'>
+    <image src='{{item.images[0]}}'></image>
+  </view>
+  <view class='info'>
+    <text class='name'>{{item.name}}</text>
+    <text>{{item.phone}}</text>
+    <text>{{item.address}}</text>
+    <text>{{item.businessHours}}</text>
+    <text wx:if="{{item.score}}" class='score'>{{item.score}}</text>
+  </view>
+</navigator>
+
+<view class='tips'>{{hasMore ? "正在加载数据..." : "没有更多数据了，别拉了"}}</view>

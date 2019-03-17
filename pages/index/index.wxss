@@ -1,0 +1,59 @@
+page{
+  background-color: #ccc;
+}
+
+swiper{
+  width: 750rpx;
+  height: 360rpx;
+}
+swiper image{
+  width: 750rpx;
+  height: 360rpx;
+}
+
+/* 九宫格导航 */
+.nav{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.nav .nav-item{
+  width: 250rpx;
+  height: 250rpx;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .nav-item:nth-child(3n){
+  border-right: none;
+}
+
+.nav .nav-item image{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.nav .nav-item text{
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+
+.footer{
+  background-color: #fff;
+  margin: 20rpx 0;
+  padding: 20rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer image{
+  width: 330rpx;
+  height: 160rpx;
+  /* margin-left: 30rpx; */
+}
